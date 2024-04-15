@@ -1,0 +1,48 @@
+body {
+    padding-top: 5rem;
+    color: #5a5a5a;
+    background: #000;
+    /* This would be a space or dark theme background image */
+}
+
+.navbar {
+    background: rgba(0, 0, 0, .5);
+    /* Semi-transparent navbar */
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.cover-container {
+    max-width: 42em;
+    padding: 3rem;
+    margin: auto;
+    text-align: center;
+}
+
+.cover-heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.lead {
+    font-weight: 300;
+    color: #999;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.content-section {
+    margin: 2rem 0;
+}
+
+.footer {
+    margin-top: 5rem;
+    padding: 5rem 0;
+    color: #999;
+    text-align: center;
+}
