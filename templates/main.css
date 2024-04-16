@@ -1,48 +1,52 @@
 body {
-    padding-top: 5rem;
-    color: #5a5a5a;
-    background: #000;
-    /* This would be a space or dark theme background image */
+    padding-top: 80px;
 }
 
-.navbar {
-    background: rgba(0, 0, 0, .5);
-    /* Semi-transparent navbar */
+.header-image {
+    width: 100%;
+    height: 27vh;
+    background-image: url('../images/header.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
-.navbar a {
-    color: #fff;
+.featurette-divider {
+    margin: 5rem 0;
 }
 
-.cover-container {
-    max-width: 42em;
-    padding: 3rem;
-    margin: auto;
-    text-align: center;
+.nav-item img {
+    height: 100%;
+    /* or you can set a fixed height, e.g., 50px */
+    max-height: 56px;
+    /* This ensures that the image does not exceed the navbar height */
 }
 
-.cover-heading {
-    font-size: 2.5rem;
-    font-weight: 300;
-}
-
-.lead {
-    font-weight: 300;
-    color: #999;
+/* Ensure proper sizing of brand image within navbar constraints */
+.nav-item {
+    display: flex;
+    /* This will align the image vertically */
+    align-items: center;
+    /* This will align the image vertically */
+    height: 56px;
+    /* Height of your navbar */
 }
 
 .social-icons a {
+    margin-right: 15px;
     color: #fff;
-    margin: 0 10px;
 }
 
-.content-section {
-    margin: 2rem 0;
+.profile-pic {
+    width: 100%;
+    /* The image will take up 100% of the .col-md-3 width */
+    border-radius: 50%;
+    /* Makes the image round */
+    object-fit: cover;
+    /* Ensures the image covers the area without stretching */
 }
 
-.footer {
-    margin-top: 5rem;
-    padding: 5rem 0;
-    color: #999;
-    text-align: center;
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.05rem;
 }

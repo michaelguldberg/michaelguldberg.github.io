@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" href="../images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="navbar-link" href="../index.html">
+                            <img src="../images/logo.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/michaelguldberg/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <script type="text/javascript">
+                            document.write('<a class="nav-link" href="mai' + 'lto:' + 'michael.guldberg4' + '@' + 'gmail.com' + '"><i class="fas fa-envelope"></i></a>');
+                        </script>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/michaelguldberg" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Data Science Projects</h1>
+        <p class="text-center mb-5">This section features a collection of my personal data science projects. Below you can find short descriptions of each project along with links to the GitHub repositories where you can find the source code and more detailed information.</p>
+        
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 class="text-center mb-4">Personal Projects</h4>
+                <!-- Project 1 -->
+                <div class="card mb-4" style="width: 100%;">
+                    <a href="https://github.com/michaelguldberg/trading_bot">
+                        <img src="../images/algotrading.webp" class="card-img-top" alt="Project Image 2">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Algotrading Bot</h5>
+                        <p class="card-text">This project uses Random Forest Regression and Classification models to generate buy and sell signals for a given list of stocks. By leveraging the Alpaca API and Yahoo Finance stock data, this implementation is capable of placing buy and sell orders on either 1 day or 1 minute intervals. Please see the link below for backtesting results.</p>
+                        <a href="./trading_tearsheet.html" class="btn btn-primary">View Backtesting Results</a>
+                        <a href="https://github.com/michaelguldberg/trading_bot" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card mb-4" style="width: 100%;">
+                    <a href="https://github.com/michaelguldberg/crypto_trading_bot">
+                        <img src="../images/btc.jpeg" class="card-img-top" alt="Project Image 1">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Crypto Trading Bot</h5>
+                        <p class="card-text">This project uses Random Forest Classification models combined with crypto trading strategies to generate buy and sell signals for BTC/USD (or other crypto assets). By leveraging the Alpaca API and OKX websocket, this implementation is capable of placing buy and sell orders on 1 minute intervals.</p>
+                        <a href="https://github.com/michaelguldberg/crypto_trading_bot" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card mb-4" style="width: 100%;">
+                    <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Project Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Wellness Tracking | 2022 Baseball Season</h5>
+                        <p class="card-text">In this project, I used a multitude of features to track my wellness during the 2022 MiLB season in Midland, TX.</p>
+                        <a href="https://github.com/guldberg8/2022-Wellness" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="card mb-4" style="width: 100%;">
+                    <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Project Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pitch Recognition</h5>
+                        <p class="card-text">In this project, I developed a predictive model for healthcare to forecast patient outcomes. It incorporates various datasets and uses machine learning techniques.</p>
+                        <a href="https://github.com/guldberg8/pitch_recognition" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="card mb-4" style="width: 100%;">
+                    <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Project Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">"Acey Deucey" Betting Strategy</h5>
+                        <p class="card-text">In this project, I developed a predictive model for healthcare to forecast patient outcomes. It incorporates various datasets and uses machine learning techniques.</p>
+                        <a href="https://github.com/guldberg8/Acey-Deucey" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h4 class="text-center mb-4">Team Projects</h4>
+                <div class="card mb-4" style="width: 100%;">
+                    <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Project Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bay Wheels Visualizations and Analysis</h5>
+                        <p class="card-text">In this project, I developed a predictive model for healthcare to forecast patient outcomes. It incorporates various datasets and uses machine learning techniques.</p>
+                        <a href="https://github.com/guldberg8/Acey-Deucey" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="card mb-4" style="width: 100%;">
+                    <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Project Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Graph Databases and Algorithms</h5>
+                        <p class="card-text">In this project, I developed a predictive model for healthcare to forecast patient outcomes. It incorporates various datasets and uses machine learning techniques.</p>
+                        <a href="https://github.com/guldberg8/Acey-Deucey" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="card mb-4" style="width: 100%;">
+                    <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Project Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Housing Prices and School Quality Analysis</h5>
+                        <p class="card-text">In this project, I developed a predictive model for healthcare to forecast patient outcomes. It incorporates various datasets and uses machine learning techniques.</p>
+                        <a href="https://github.com/guldberg8/Acey-Deucey" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="card mb-4" style="width: 100%;">
+                    <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Project Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Examining the Wage Gap Across Generations</h5>
+                        <p class="card-text">In this project, I developed a predictive model for healthcare to forecast patient outcomes. It incorporates various datasets and uses machine learning techniques.</p>
+                        <a href="https://github.com/guldberg8/Acey-Deucey" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
