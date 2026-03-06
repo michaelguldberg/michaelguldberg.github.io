@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Michael Guldberg</title>
+    <link rel="icon" href="../images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet">
+    <style>
+        .demo-card {
+            border-left: 4px solid #0d6efd;
+            background: #f8f9fa;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .demo-card h5 {
+            color: #0d6efd;
+        }
+        .step-badge {
+            display: inline-block;
+            background: #0d6efd;
+            color: white;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="navbar-link" href="../index.html">
+                            <img src="../images/logo.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="demo.html">Demo</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/michaelguldberg/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:michael.guldberg4@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/michaelguldberg" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h2 class="featurette-heading mb-2">How Claude Code Works</h2>
+        <p class="lead text-muted mb-5">This page is a live example — it was created automatically by Claude Code in response to a GitHub issue.</p>
+
+        <div class="row">
+            <div class="col-lg-8">
+
+                <div class="demo-card">
+                    <h5><span class="step-badge">1</span> Open a GitHub Issue</h5>
+                    <p class="mb-0">You write a request in plain English as a GitHub issue on your repository. For example: <em>"Give me an example of how this works."</em></p>
+                </div>
+
+                <div class="demo-card">
+                    <h5><span class="step-badge">2</span> Claude Code Reads the Codebase</h5>
+                    <p class="mb-0">Claude Code reads your existing files (<code>index.html</code>, <code>templates/</code>, <code>main.css</code>, etc.) to understand the structure and style of your project before making any changes.</p>
+                </div>
+
+                <div class="demo-card">
+                    <h5><span class="step-badge">3</span> Changes Are Made on a Branch</h5>
+                    <p class="mb-0">All changes happen on a dedicated branch (e.g., <code>claude/create-example-demo-jv1Fa</code>), so your <code>main</code> branch is never touched directly.</p>
+                </div>
+
+                <div class="demo-card">
+                    <h5><span class="step-badge">4</span> Commit &amp; Push</h5>
+                    <p class="mb-0">Claude Code commits the changes with a descriptive message and pushes the branch to GitHub, ready for your review.</p>
+                </div>
+
+                <div class="demo-card">
+                    <h5><span class="step-badge">5</span> You Review &amp; Merge</h5>
+                    <p class="mb-0">You review the pull request, request changes if needed, and merge when you're happy. You stay in full control.</p>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-dark text-white">
+                        <i class="fab fa-github me-2"></i> This Demo in Numbers
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Files read</span>
+                            <strong>5</strong>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Files created</span>
+                            <strong>1</strong>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Branch</span>
+                            <strong style="font-size:0.75em">claude/create-example-demo-jv1Fa</strong>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Human edits needed</span>
+                            <strong>0</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="border-top my-3"></div>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center mb-3">
+                <div class="col-auto">
+                    <a class="nav-link" href="https://www.linkedin.com/in/michaelguldberg/" target="_blank" style="font-size: 32px;"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="col-auto">
+                    <a class="nav-link" href="mailto:michael.guldberg4@gmail.com" style="font-size: 32px;"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="col-auto">
+                    <a class="nav-link" href="https://www.instagram.com/michaelguldberg" target="_blank" style="font-size: 32px;"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
